@@ -1,0 +1,22 @@
+- So far, we have simply been using the annotation @Component, to mark the components within our Spring application
+
+- However, there are many other annotations available within Spring which we use for different situations
+
+(1) @Component - Generic Component
+
+(2) @Repository - Encapsulating storage, retrieval, and search behaviour typically from a relational database
+
+(3) @Service - Business Service Facade
+
+(4) @Controller - Controller in MVC pattern
+
+- Recall the Java EE Architecture image which we saw in the beginning of the course, we can use specific annotations when we want the components to reside in only a
+certain layer in the Architecture (for example Controller, refers to the controller in an MVC pattern and resides in the web layer)
+
+- @Service resides in the business layer, and @Repository extracts information from the database 
+
+- Why should we use these annotations, when component works for most cases?
+(1) It allows us to easily classify the type of component that we are dealing with
+
+(2) Spring provides us with special methods which we can utilize only if we have declared the component
+types before hand

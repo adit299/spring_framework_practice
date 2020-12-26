@@ -1,0 +1,26 @@
+- One of the auto-configuration features of our current Spring Application is the fact that whenever we initialize it, all the
+data in the data.sql file gets populated onto our h2 database
+
+- To create a table containing the particular columns of data desired, we use the following syntax:
+create table person
+(
+	id integer not null,
+	name varchar(255) not null,
+	location varchar(255) not null,
+	birth_date timestamp,
+	primary key(id)
+)
+
+- not null means the data for that column cannot be blank, and varchar(255) means maximum 255 characters
+
+- Query to rerun (since the h2 database is in-memory, this means that whenever we restart the application, all our data will
+dissappear, we need to run this query again to add the data that we lost
+
+INSERT INTO PERSON 
+        (ID, NAME, LOCATION, BIRTH_DATE)
+VALUES(10001, 'Adit', 'Toronto', sysdate());
+
+- To see everything in the table Select * from person
+
+
+- 

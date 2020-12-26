@@ -1,0 +1,7 @@
+- If we take a look at the jdbc handling of database queries and handling of populating objects, we can see that 
+it is fairly more complex than the spring jdbc code
+
+- The jdbc code is actually much inferior to springjdbc code because it does not error handle very well.
+
+- If one of the parts throws an exception, we have nothing in place to handle the exception properly, and it results in a data leak
+

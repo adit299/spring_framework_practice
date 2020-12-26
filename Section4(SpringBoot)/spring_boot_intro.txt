@@ -1,0 +1,33 @@
+- Nowawdays, the world of development is moving away from developing large monolith applications, and towards simpler, smaller
+microservice based applications
+
+- In this world of microservices, Spring Boot quickly established itself as a major player in the microservices development
+sphere, enabling building production ready applications quickly and easily
+
+- Spring Boot provides common non-functional features like:
+	- embedded servers
+	- metrics
+	- health checks
+	- externalized configuration
+
+- However, what Spring is NOT!
+	- ZERO code generation
+	- Neither an application server nor a web server
+
+Features of Spring Boot
+	- Quick starter projects with Auto Configuration: Setting up all the dependencies for an application can be
+	quite a daunting task. Spring Boot simplifies this task by quite a bit, with auto-configuration, allowing us
+	to initialize quickly and effectively production ready projects
+
+	- Embedded Servers: Before, when we wanted to deploy a web application, we would have to install linux box, install
+	java on it, then install a web server of some kind. We would then take our application .war file and deploy it to this server
+
+	- With Spring Boot comes a concept of "embedded servers", which essentially means we can package our server with our 
+	application .jar, we don't need to install a web server on our Linux box
+
+	- In the world of microservices, this makes a huge difference in productivity, and the amount of time it takes to accomplish
+	deploying our application
+
+	- Production-ready features: Spring comes with a lot of features that can help immensely in our development of applications
+		- metrics and health checks: Spring can be used to identify how many times an application has failed and where
+		- externalized configuration: Spring helps us very easily differentiate between our production build and user build

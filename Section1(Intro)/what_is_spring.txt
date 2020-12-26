@@ -1,0 +1,36 @@
+- Put simply, spring is a dependency injection framework
+
+- Within the application hierarchy, the web layer is what takes care of the UI
+
+- The business layer communicates with the data layer to obtain the data necessary for the application
+
+- What is tight coupling?
+	- When an instance of a class is instantiated within a another class
+	- Generally, this points towards bad coding practice, we want loose coupling
+
+
+What is Dependency?
+	- See the tight coupling code example
+
+
+@Component - Putting this ontop of a classname tells spring that it needs to manage the class, and its dependencies.
+Note also that @Component will have to be put ontop of the dependency as well to signify that this class has to be managed by
+spring
+
+@Autowired - Putting this ontop of a component, will tell Spring to search its components for one that matches the one with
+this term ontop of it
+
+Spring Terminology
+
+Beans - These are another way to name any of the dependencies that Spring is in charge of managing
+
+Autowiring - When the Spring framework identifies the correct dependency and creates an instance of the class by utilizing
+this dependency
+
+Dependency Injection - The act of injecting a dependency into a particular class to instantiate an instance of it (the entire
+point of the spring framework!)
+
+Inverstion of Control/IOC container - The act of moving the control of dependency injection from the user to the Spring framework
+IOC container is a generic term to label anything that is implementing Inversion of Control
+
+Application Context - Where all the core logic of Spring happens (Bean creation, etc.)

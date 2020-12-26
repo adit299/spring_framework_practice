@@ -1,0 +1,4 @@
+- The dependency of spring-boot-starter-json, within the spring-boot-starter-web dependency is what is responsible for parsing
+through any bean outputs (for example the one we returned from books container), and make it into JSON format
+
+- We can manipulate the .xml files to include or disclude more dependencies for our particular project

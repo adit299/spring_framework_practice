@@ -1,0 +1,10 @@
+point_cut - the exact point in the application which we want to intercept and analyze calls from
+
+joinPoint - dependency that can be used to analyze exactly which method we are intercepting
+
+Advice - we call whatever it is that we do within the function body after the point_cut, advice
+
+Aspect - the combination of the advice and point cut is known as the aspect
+
+Weaving/Weaver - the process of allowing for AOP functionality within our class is known as "weaving" and 
+the dependency which is responsible for this is called a weaver

@@ -1,0 +1,5 @@
+- the h2 database is an example of an "inmemory" database which essentially means that any data entered there will not
+persist on the disk
+
+- thus, it provides us with a great database that emulates most of the features of SQL, without the complicated setup required
+of it

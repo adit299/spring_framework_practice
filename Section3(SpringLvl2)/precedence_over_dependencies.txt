@@ -1,0 +1,11 @@
+Resolving Multiple Dependencies when Autowiring
+
+1) @Primary - If two qualifying components are given, and we mark one of them with the Primary marker, that is the one
+which will be used to initialize the class
+
+2) Class Name - If a component has a matching name to one of its dependencies, Spring will automatically get the component
+that has a matching name and use it to initialize the component
+
+2) @Qualifier("<name>") - We can mark a particular component with this, and when autowiring we repeat this with the name of the
+component that we want to initialize the component with. Then, we can specify which component we want to use when initializing
+the component

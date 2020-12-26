@@ -1,0 +1,8 @@
+Container Dependency Injection (CDI) vs Component + Autowiring (Spring)
+
+- CDI complies with Java EE standards, so it could be seen as the more favorable method of dependency injection
+
+- However, both the Spring Annotations and the CDI Annotations are capable of performing the same function, so either one
+works for most of our purposes
+
+

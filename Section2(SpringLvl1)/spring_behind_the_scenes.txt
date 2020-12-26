@@ -1,0 +1,18 @@
+(1) When we run a Spring application, the first thing that it does is do a component scan to see where to find all the components
+that have been setup for the application
+
+(2) Once the components have been identified, Spring goes through and intializes the Beans and Autowiring the dependencies 
+accordingly so that the classes are initialized properly 
+
+(3) Essentially, Spring steps into an application until it can no longer identify dependencies for it, and then initializes the 
+class accordingly
+
+
+Setter vs Constructor vs None in terms of Managing dependencies
+
+- It used to be recommended that mandatory dependencies be intialized in the constructor, while non-mandatory dependencies be
+initialized using setter notation
+
+- However, as Spring evolved, the lines have really blurred between all these methods (since using no setter or constructor still
+allows us to initialize the class)
+

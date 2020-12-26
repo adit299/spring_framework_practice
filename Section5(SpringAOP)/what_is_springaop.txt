@@ -1,0 +1,9 @@
+- AOP stands for Aspect Oriented Programming
+
+- Recall the diagram we saw earlier in the course depicting the three layers of code in an application, the web, business, and data
+layers
+
+- There is a such thing as "cross-cutting" concerns, meaning certain concerns which have to encompass every layer of the application
+(tracking, security, logging, etc.)
+
+- AOP is one of the best ways to implement a "cross-cutting" concern into an application

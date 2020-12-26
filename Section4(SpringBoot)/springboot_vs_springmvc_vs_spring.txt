@@ -1,0 +1,23 @@
+- What is the difference between these 3 frameworks? Well, we can solve that question by taking a look at what problems 
+each of these frameworks are designed to solve
+
+- Spring Framework:
+	- As we have seen in this course, the core problem which the Spring framework is designed to solve is dependency injection
+	or IOC, inversion of control
+	- As an extension of this, by making applications loosely coupled through the use of Spring, we are able to test the individual
+	classes with ease as well
+	- The Spring framework also solves a number of smaller problems like duplication/plumbing code, allowing us to elminate
+	the need for reptitive, monotonous boilerplate code
+	- The Spring framework also provides very good integration with a number of other frameworks and libraries, such as 
+	JUnit, Mockito, etc.
+
+- SpringMVC:
+	- The Spring MVC framework provides decoupled ways of developing web applications, allowing us to partition each 
+	part of the web application into seperate parts
+	- Concepts like dispatcher servlet, ModelAndView, and view resolver, makes it easy to develop web applications
+
+- Spring Boot:
+	- Spring Boot helps us a lot with the configuration aspect of the application, allowing us to easily configure, and 
+	get an application running without having to spend time on this
+	- It also gives us access to a number of features which all aid in the creation of a production ready application,
+	features to monitor our application such as spring-boot-starter-actuator, etc.

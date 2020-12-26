@@ -1,0 +1,14 @@
+Bean Scope
+
+- By default in Spring, beans are set to be singleton, meaning one instance of the class is initialized when we try to obtain
+it as a bean from the application context
+
+- Thus, if we create two seperate variables and try to obtain the same bean from the application context, we will end
+up with the identical instance of the class (bean)
+
+- There are 3 other possible bean scopes:
+Prototype: New bean whenever requested (we will obtain two difference instances of the class (two different beans)
+
+request: One bean per HTTP request
+
+session: One bean per HTTP session

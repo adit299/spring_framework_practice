@@ -1,0 +1,27 @@
+- We can manage our dependencies for our project two ways, either using the XML Application Context or the Java Application Context
+
+- We can also do a combination of the two, for example by defining a component scan within the applicationContext.xml file and 
+then using the @Component and @Autowired annotations that we are familiar with
+
+- Purely XML would mean that we would define all our dependencies within the XML file itself
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+- Recall, the definition of IOC or Inversion of Control. We want to let Spring take care of our dependencies, and initilialize
+them
+
+- Looking at rehasing_inversion_control and after_spring, we can see how Spring takes care of the dependency injection
+
+- This is exactly what is meant by Inversion of Control, we are inverting the control of dependency injection from the Beans to 
+Spring
+
+- The IOC cotainer is a generic term to signify where this takes place, so the place where any autowiring takes place can be 
+known as the IOC container 
+
+- There are two different ways to implement a IOC container within Spring, through the use of a Bean Factory or an Application
+Context
+
+- The Application Context can be thought of as a Bean Factory++ which contains many additional features as opposed to the bean
+factory which provides only basic @Autowiring and @Component features (see the picture for the full list)
+
+- 

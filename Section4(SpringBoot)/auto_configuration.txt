@@ -1,0 +1,14 @@
+How exactly does Spring Auto Configuration work?
+
+- It takes into account two key things:
+
+(1) Spring Boot looks at frameworks available on the CLASSPATH
+
+(2) Existing configuration for the application
+
+- Essentially, autoconfiguration is what allows Spring to initialize all the beans necessary for the production quality 
+attributes and the additional features Spring Provides (ex. Spring web MVC)
+
+- If we add the following line of code into our application.properties file: logging.level.org.springframework = DEBUG,
+
+- we are then able to see in the console exactly what dependencies Spring is intializing due to auto configuration 

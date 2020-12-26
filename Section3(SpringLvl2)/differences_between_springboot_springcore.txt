@@ -1,0 +1,8 @@
+(1) Instead of initializing the main application with @SpringBootApplication, it has to be initialized with @Configuration
+
+(2) @SpringBootApplication automatically initializes a component scan, while with spring core we need to manually set where
+to scan for components
+
+(3) The Application context is initialized in a different way
+
+(4) We have to add several dependencies on the pom.xml file to accomadate for the change such as adding the context object, etc.

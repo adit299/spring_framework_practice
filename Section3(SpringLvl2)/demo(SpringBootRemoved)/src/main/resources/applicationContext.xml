@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+  <!-- We added the schema location for context here so that we can perform a component scan -->
+  
+  <!-- We are performing an overall component scan, for the entire project directory -->
+  <context:component-scan base-package="com.in28minutes.spring.basics"/>      
+           
+
+  <bean id="XMLJdbcConnection" class="com.in28minutes.spring.basics.demo.xml.XMLJdbcConnection">
+    <!-- collaborators and configuration for this bean go here -->
+  </bean>
+
+  <bean id="XMLPersonDAO" class="com.in28minutes.spring.basics.demo.xml.XMLPersonDAO">
+    <!-- collaborators and configuration for this bean go here -->
+    <!-- We are defining which property will get autowired to this particular class, in this
+    portion of the XML tag -->
+    <property name="XMLJdbcConnection" ref="XMLJdbcConnection"/>
+  </bean>
+
+  <!-- more bean definitions go here -->
+
+</beans>

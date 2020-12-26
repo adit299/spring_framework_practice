@@ -1,0 +1,5 @@
+(1) Check that @Component is ontop of the bean
+
+(2) Check that component is under the same package as the class which you have declared as @SpringBootApplication, if not 
+create an @ComponentScan() and feed it the package name of the class that the dependency is under, so that the component is
+correctly picked up
